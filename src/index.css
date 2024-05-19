@@ -15,6 +15,7 @@ body {
   max-width: 600px; /* 최대 600px까지 늘어남 */
   width: 100%;
   margin: 0 auto; /* 가운데 배치 */
+  padding: 0px 20px; /* 상하 좌우 내부여백 */
   min-height: 100vh; /* vh: Vieport Height: 현재 브라우저의 스크린 높이 / 100vh로 설정하면 스크린 최대높이로 늘어남 */
   height: 100%;
 
