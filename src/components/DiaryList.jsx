@@ -10,7 +10,7 @@ const DiaryList = ({ data }) => {
   const [sortType, setSortType] = useState("latest");
 
   const onChangeSortType = (e) => {
-    setSortType(e.target.value);
+    setSortType(e.target.value); // option value = "oldest / latest"
   };
 
   // 객체값 비교 시에는 제대로 작동 x: 비교함수를 콜백함수로 넣어줌

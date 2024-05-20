@@ -5,6 +5,7 @@
 
 html,
 body {
+  display: flex; /* 전체 페이지를 감싸도록 설정 */
   margin: 0px;
   width: 100%;
   background-color: rgb(246, 246, 246);
