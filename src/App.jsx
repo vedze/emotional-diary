@@ -55,6 +55,7 @@ function App() {
   const [data, dispatch] = useReducer(reducer, mockData);
   const idRef = useRef(3);
 
+  // 새 일기 추가
   const onCreate = (createdDate, emotionId, content) => {
     dispatch({
       type: "CREATE",
@@ -67,6 +68,7 @@ function App() {
     });
   };
 
+  // 기존 일기 수정
   const onUpdate = (id, createdDate, emotionId, content) => {
     dispatch({
       type: "UPDATE",
@@ -79,6 +81,7 @@ function App() {
     });
   };
 
+  // 기존 일기 삭제
   const onDelete = (id) => {
     dispatch({
       type: "DELETE",
