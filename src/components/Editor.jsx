@@ -2,16 +2,9 @@ import Button from "./Button";
 import "./Editor.css";
 import EmotionItem from "./EmotionItem";
 
+import { emotionList } from "../util/constants";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-
-const emotionList = [
-  { emotionId: 1, emotionName: "아주 좋음" },
-  { emotionId: 2, emotionName: "좋음" },
-  { emotionId: 3, emotionName: "보통" },
-  { emotionId: 4, emotionName: "나쁨" },
-  { emotionId: 5, emotionName: "아주 나쁨" },
-];
 
 const getStringedDate = (targetDate) => {
   let year = targetDate.getFullYear();
