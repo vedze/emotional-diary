@@ -1,0 +1,68 @@
+.Viewer > section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.Viewer > section > h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.Viewer .emotion_img_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; /* 아이템들의 둘레에 균일한 간격 만들어줌 */
+
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+
+  color: white;
+  font-size: 25px;
+}
+
+.Viewer .emotion_img_wrapper_1 {
+  color: White;
+  background-color: rgb(100, 201, 100);
+}
+.Viewer .emotion_img_wrapper_2 {
+  color: white;
+  background-color: rgb(157, 215, 114);
+}
+.Viewer .emotion_img_wrapper_3 {
+  color: white;
+  background-color: rgb(253, 206, 23);
+}
+.Viewer .emotion_img_wrapper_4 {
+  color: white;
+  background-color: rgb(253, 132, 70);
+}
+.Viewer .emotion_img_wrapper_5 {
+  color: white;
+  background-color: rgb(253, 86, 95);
+}
+
+.Viewer .content_wrapper {
+  width: 100%;
+  background-color: rgb(236, 236, 236);
+  border-radius: 5px;
+
+  /* 자연스러운 줄바꿈 */
+  word-break: keep-all; /* 단어 기준 줄바꿈 */
+  overflow-wrap: break-word; /* 긴 단어나 URL처럼 분리할 수 없는 문자열인 경우 임의의 지점에서 줄바꿈 발생 */
+  /* -> width: min-content인 경우 소프트 랩(허용된 중단점에서 콘텐츠를 줄바꿈하는 것) 기회를 고려하지 않음 */
+}
+
+.Viewer .content_wrapper > p {
+  padding: 20px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 2.5; /* 줄 간 간격 */
+}
