@@ -4,10 +4,12 @@ import Button from "../components/Button";
 import Viewer from "../components/Viewer";
 import useDiary from "../hooks/useDiary";
 import { getStringedDate } from "../util/get-stringed-date";
+import usePageTitle from "../hooks/usePageTitle";
 
 const Diary = () => {
   const nav = useNavigate();
   const params = useParams();
+  usePageTitle(`${params.id}번 일기`);
 
   const currentDiaryItem = useDiary(params.id);
   // useDiary의 첫번째 반환값이 undefined이 되는 것 방지
